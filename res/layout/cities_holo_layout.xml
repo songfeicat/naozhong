@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/wood" >
+    
+    <com.example.wheeldemo.adapters.WheelView
+        android:id="@+id/city"
+        android:layout_width="60dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/swtich"
+        android:layout_below="@id/city" />
+    
+    <com.example.wheeldemo.adapters.WheelView
+        android:id="@+id/city2"
+        android:layout_width="60dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/swtich"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/city2" />
+    
+    
+    
+    <com.example.wheeldemo.adapters.WheelView
+        android:id="@+id/city3"
+        android:layout_width="60dp"
+        android:layout_height="200dp"
+        android:layout_toRightOf="@id/city"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"/>  
+        
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/swtich"
+        android:layout_above="@id/city3"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/btn" />
+    
+    <com.example.wheeldemo.adapters.WheelView
+        android:id="@+id/city4"
+        android:layout_width="60dp"
+        android:layout_height="200dp"
+        android:layout_toLeftOf="@id/city2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"/>  
+        
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/swtich"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/city2"
+        android:layout_above="@id/city4" />
+
+</RelativeLayout>
